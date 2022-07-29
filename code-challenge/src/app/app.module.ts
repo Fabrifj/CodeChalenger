@@ -7,6 +7,8 @@ import { IndexComponent } from './components/index/index.component';
 import { ResultsComponent } from './components/results/results.component';
 import { ResultListComponent } from './shared-components/result-list/result-list.component';
 import { ResultItemComponent } from './shared-components/result-item/result-item.component';
+import { NavsComponent } from './shared-components/navs/navs.component';
+import {SearchService} from 'src/app/services/search.service'
 
 @NgModule({
   declarations: [
@@ -14,13 +16,14 @@ import { ResultItemComponent } from './shared-components/result-item/result-item
     IndexComponent,
     ResultsComponent,
     ResultListComponent,
-    ResultItemComponent
+    ResultItemComponent,
+    NavsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

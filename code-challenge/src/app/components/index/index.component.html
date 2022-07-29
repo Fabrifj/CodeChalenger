@@ -1,1 +1,23 @@
-<p>index works!</p>
+<div class="container-fluid">
+	<div class="row">
+        
+		<div class="col-md-12">
+			<h3 class="my-2 text-center">
+				search all music that you want
+			</h3>
+            <img class="rounded mx-auto d-block" alt="Bootstrap Image Preview" src="../../../assets/music.jpg" />
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4">
+                    <input class="form-control mr-sm-5" type="text" #mySelect /> 
+					<button type="button" class="mt-4 btn btn-success btn-block"  (click)="search(mySelect.value)" routerLink="/results">
+						Button
+					</button>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

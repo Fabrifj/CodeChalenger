@@ -8,6 +8,7 @@ import { ResultsComponent } from './components/results/results.component';
 import { ResultListComponent } from './shared-components/result-list/result-list.component';
 import { ResultItemComponent } from './shared-components/result-item/result-item.component';
 import { NavsComponent } from './shared-components/navs/navs.component';
+import {SearchService} from 'src/app/services/search.service'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { NavsComponent } from './shared-components/navs/navs.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

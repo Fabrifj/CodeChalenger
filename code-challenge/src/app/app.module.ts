@@ -7,6 +7,7 @@ import { IndexComponent } from './components/index/index.component';
 import { ResultsComponent } from './components/results/results.component';
 import { ResultListComponent } from './shared-components/result-list/result-list.component';
 import { ResultItemComponent } from './shared-components/result-item/result-item.component';
+import { NavsComponent } from './shared-components/navs/navs.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ResultItemComponent } from './shared-components/result-item/result-item
     IndexComponent,
     ResultsComponent,
     ResultListComponent,
-    ResultItemComponent
+    ResultItemComponent,
+    NavsComponent
   ],
   imports: [
     BrowserModule,

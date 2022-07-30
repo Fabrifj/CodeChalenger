@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultsComponent implements OnInit {
   searchedWord = "ss"
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }
+
 
 }

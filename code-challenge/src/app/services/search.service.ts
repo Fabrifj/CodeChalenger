@@ -11,7 +11,15 @@ export class SearchService {
   searchWords = ""
   limitResult = ""
   searchUrl = ""
+
+  /**
+   * Get and create que params for the query
+   * 
+   * @param searchWord   
+   * @param limitResult 
+   */
   searchSong(searchWord:string, limitResult:string){
+    this.searchWords = ""
     let arraywords = searchWord.split(" ")
     arraywords.forEach((word)=>{
       this.searchWords = this.searchWords +"+"+ word
@@ -19,8 +27,20 @@ export class SearchService {
     this.searchWords = this.searchWords.slice(1)
     limitResult.length != 0 ? this.limitResult = limitResult : this.limitResult = "10"
     this.searchUrl = this.defUrl + this.searchWords + "&limit=" + this.limitResult
+    
   }
+  /**
+   * 
+   * @returns the query
+   */
   getSongs(){
     return  this.http.get(this.searchUrl)
+  }
+  /**
+   * 
+   * @returns the phares searched
+   */
+  getWords(){
+    return this.searchWords
   }
 }

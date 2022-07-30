@@ -1,1 +1,5 @@
-<p>result-list works!</p>
+<h4>Top:{{limit}}</h4>
+<app-result-item
+    *ngFor="let resultEle of results"
+    [result] = "resultEle"
+></app-result-item>

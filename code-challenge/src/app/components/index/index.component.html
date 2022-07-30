@@ -5,18 +5,23 @@
 			<h3 class="my-2 text-center">
 				search all music that you want
 			</h3>
-            <img class="rounded mx-auto d-block" alt="Bootstrap Image Preview" src="../../../assets/music.jpg" />
+            <img class="mb-2 rounded mx-auto d-block" alt="Bootstrap Image Preview" src="../../../assets/music.jpg" />
 			<div class="row">
 				<div class="col-md-4">
 				</div>
 				<div class="col-md-4">
-                    <input class="form-control mr-sm-5" type="text" #mySelect /> 
+                    <label  class="form-label">Enter the name</label>
+                    <input class="form-control mr-sm-1" type="text" placeholder="..." #mySelect /> 
 					<button type="button" class="mt-4 btn btn-success btn-block"  (click)="search(mySelect.value)" routerLink="/results">
 						Button
 					</button>
 				</div>
-				<div class="col-md-4">
-				</div>
+				<div class="col-md-1">
+                    <label  class="form-label">Max results</label>
+                    <input type="text" class="form-control" placeholder="10" #limit>
+                </div>    
+                <div class="col-md-3">
+                </div>
 			</div>
 		</div>
 	</div>

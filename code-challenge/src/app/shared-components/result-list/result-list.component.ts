@@ -15,7 +15,6 @@ export class ResultListComponent implements OnInit {
         "trackPrice":1.29,
         "trackTimeMillis":238806,
       }]
-  limit = 10
   constructor() { }
 
   ngOnInit(): void {

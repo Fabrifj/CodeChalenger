@@ -10,6 +10,7 @@ import { ResultItemComponent } from './shared-components/result-item/result-item
 import { NavsComponent } from './shared-components/navs/navs.component';
 import {SearchService} from 'src/app/services/search.service'
 import { HttpClientModule } from '@angular/common/http';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     ResultsComponent,
     ResultListComponent,
     ResultItemComponent,
-    NavsComponent
+    NavsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

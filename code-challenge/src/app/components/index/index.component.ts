@@ -12,6 +12,13 @@ export class IndexComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  /**
+   * Recive parmas to do the search and send to the search service
+   * 
+   * @param songName 
+   * @param limit 
+   */
   search(songName:string, limit:string){
     this.searchService.searchSong(songName,limit)
     

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-result-item',
@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./result-item.component.css']
 })
 export class ResultItemComponent implements OnInit {
-  @Input() result:any;
+
   constructor() { }
 
   ngOnInit(): void {

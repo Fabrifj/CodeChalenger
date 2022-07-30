@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./results.component.css']
 })
 export class ResultsComponent implements OnInit {
-  searchedWord = "ss"
+
   constructor() { }
 
   ngOnInit(): void {

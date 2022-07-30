@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-result-list',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./result-list.component.css']
 })
 export class ResultListComponent implements OnInit {
-  results = [{"kind":"song",
+  @Input() results = [{"kind":"song",
         "artistName":"Jack Johnson",
         "collectionName":"Sleep Through the Static",
         "trackName":"If I Had Eyes",

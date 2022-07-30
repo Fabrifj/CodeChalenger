@@ -5,12 +5,14 @@
     Return
 </button>
 <div class="row">
-    <div class="ms-3 col-md-4">
+    <div class="ms-3 col-md-3">
         <h2>Results:{{searchedWord}}</h2>
     </div>
-    <div class="mt-5 col-md-4">
-        <app-result-list></app-result-list>
+    <div class="mt-5 col-md-6">
+        <app-result-list
+            [results] = resultList    
+        ></app-result-list>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
     </div>
 </div>

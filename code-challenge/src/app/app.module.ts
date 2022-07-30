@@ -9,6 +9,7 @@ import { ResultListComponent } from './shared-components/result-list/result-list
 import { ResultItemComponent } from './shared-components/result-item/result-item.component';
 import { NavsComponent } from './shared-components/navs/navs.component';
 import {SearchService} from 'src/app/services/search.service'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {SearchService} from 'src/app/services/search.service'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [SearchService],
   bootstrap: [AppComponent]

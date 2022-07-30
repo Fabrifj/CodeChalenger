@@ -12,8 +12,8 @@ export class IndexComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  search(songName:string){
-    console.log(songName)
+  search(songName:string, limit:string){
+    this.searchService.searchSong(songName,limit)
     
   }
 }
